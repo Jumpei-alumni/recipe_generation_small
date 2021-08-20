@@ -26,7 +26,7 @@ make_recipe_button = st.button('make recipe(料理手順生成)')
 
 
 if make_recipe_button:
-    if (ingredients.replace(' ','') != '') and (name.replace(' ','') != ''):
+    if (name.replace(' ','') != ''):
         data_load_state = st.text('Loading data...(頑張って作っています)')
         ingredients = ingredients.replace(', ', ',').replace(' ,', ',')
         recipe = 'aa'
@@ -53,4 +53,4 @@ if make_recipe_button:
             
             
     else:
-        st.write('Please fill in the blanks.(空欄を埋めてください)')
+        st.write('Please fill in the blanks of cooking name.(料理名の空欄を埋めてください)')
