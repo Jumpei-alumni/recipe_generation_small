@@ -8,6 +8,9 @@ import time
 import random
 import numpy as np
 import torch.nn.functional as F
+
+tokenizer = BartTokenizer.from_pretrained("facebook/bart-base")
+
 class RecipeBART(nn.Module):
     def __init__(self):
         super(RecipeBART, self).__init__()
