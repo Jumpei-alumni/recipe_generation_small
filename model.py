@@ -1,4 +1,4 @@
-from transformers import BartTokenizer, BartModel
+from transformers import BartTokenizer, BartModel, BartConfig
 import torch
 import torch.nn as nn
 import torch.optim as optim
